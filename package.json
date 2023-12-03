@@ -1,0 +1,16 @@
+{
+  "name": "100xdevs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dexter-ifti/100xdevs/issues"
+  },
+  "homepage": "https://github.com/dexter-ifti/100xdevs#readme"
+}
