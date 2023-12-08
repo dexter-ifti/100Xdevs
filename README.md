@@ -1,10 +1,10 @@
 # 100Xdevs Cohort 2.0
 
-## Week 0
+## Week - 0 (Offline)
 - Basics of HTML and CSS
   - Assignment/Class - [Zerodha Landing Page](https://github.com/dexter-ifti/100Xdevs/tree/main/Week_0/zerodha-app)
 
-## Week - 1
+## Week - 1 (Live + Offline)
 - Week 1.1 - Orientation
 - Week 1.2 JS Foundation - [Click Here for Code](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/main.js)
 - Offline Classes
@@ -34,3 +34,5 @@
     - [Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/counter.js)
     - [Terminal Clock]()
     - [Calculate Time]() 
+
+## Week - 2
