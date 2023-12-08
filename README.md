@@ -8,17 +8,20 @@
 - Week 1.1 - Orientation
 - Week 1.2 JS Foundation - [Click Here for Code](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/main.js)
 - Offline Classes
-- Week 1.3 Basics JS APIs (Code will update Soon)
-  - Level-1
-    - String
-    - Numbers
-    - Arrays
-  - Level-2
-    - Classes
-    - Date
-    - JSON
-    - Math
-    - Objects
+- Week 1.3 Basics JS APIs 
+
+  - [Level-1](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/offline-class/class-1/level-1)
+    - [String](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-1/01-String.js)
+    - [Numbers](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-1/02-Numbers.js)
+    - [Arrays](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-1/03-Arrays.js)
+
+
+  - [Level-2](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/offline-class/class-1/level-2)
+    - [Classes](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/01-Class.js)
+    - [Date](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/02-Date.js)
+    - [JSON](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/03-JSON.js)
+    - [Math](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/04-Math.js)
+    - [Objects](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/05-Objects.js)
 
 - Week 1.4 Loops, Callback Functions  
   - [Class Code and Notes](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/offline-class/class-2)
