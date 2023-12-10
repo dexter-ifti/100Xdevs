@@ -24,9 +24,10 @@
     - [Objects](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/offline-class/class-1/level-2/05-Objects.js)
 
 - Week 1.4 Loops, Callback Functions  
+
   - [Class Code and Notes](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/offline-class/class-2)
   
-- Week 1.5 Async Functions, Promises (Code will update Soon)
+- Week 1.5 Async Functions, Promises
 
   - [Class Code and Notes](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/offline-class/class-3)
 
@@ -47,3 +48,6 @@
   - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
   - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) 
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) (will update shortly)
+
+- Week 2.2 HTTP Server
+
