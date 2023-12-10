@@ -16,3 +16,11 @@ fs.writeFile("a.txt", "Hi Taha", (err) => {
     if (err)  console.log(err); 
     else console.log("Successfully written");
 });
+// Expensive operation
+console.log("Helllo");
+let sum = 0;
+for(let i = 0 ; i < 1000000000; i++){
+  sum++;
+}
+// console.log(sum);
+console.log("Bye");
