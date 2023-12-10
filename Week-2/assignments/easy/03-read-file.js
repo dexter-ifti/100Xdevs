@@ -7,7 +7,7 @@ Write code to read contents of a file and print it to the console. You can use t
 // fs.readFile(path[, options], callback) 
 const fs = require("fs");
 
-fs.readFile("a.txt", "utf-8", function (err, data) {
+fs.readFile("/workspaces/100Xdevs/Week-2/assignments/easy/a.txt", "utf-8", function (err, data) {
     console.log(data);
 });
 console.log("Syncronus Fxn");

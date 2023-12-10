@@ -6,13 +6,13 @@
 // Write to a file
 // fs.writeFile(file, data[, options], callback)
 const fs = require("fs");
-fs.writeFile("a.txt", "Hi Taha", function (err) {
+fs.writeFile("/workspaces/100Xdevs/Week-2/assignments/easy/a.txt", "Hi Taha", function (err) {
     console.log("Successfully written");
 });
 
 // OR
 // Arrow function
-fs.writeFile("a.txt", "Hi Taha", (err) => {
+fs.writeFile("/workspaces/100Xdevs/Week-2/assignments/easy/a.txt", "Hi Taha", (err) => {
     if (err)  console.log(err); 
     else console.log("Successfully written");
 });
