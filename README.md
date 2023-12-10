@@ -36,11 +36,12 @@
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-1/assignments/01-js/hard)
 - Extra Assignments
     - [Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/counter.js)
-    - [Terminal Clock]()
-    - [Calculate Time]() 
+    - [Terminal Clock](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/terminal-clock.js)
+    - [Calculate Time](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/time.js) 
 
 ## Week - 2
-
+- Week 2.1  Revision of Async JS 
+  - [Code]()(will update shortly) 
 - Assignments
   - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
   - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) (will update shortly)
