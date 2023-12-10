@@ -43,6 +43,9 @@
 - Week 2.1  Revision of Async JS 
   - [Code]()(will update shortly) 
 - Assignments
+
   - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
-  - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) (will update shortly)
+  
+  - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) 
+  
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) (will update shortly)
