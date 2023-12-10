@@ -40,3 +40,8 @@
     - [Calculate Time]() 
 
 ## Week - 2
+
+- Assignments
+  - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
+  - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) (will update shortly)
+  - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) (will update shortly)
