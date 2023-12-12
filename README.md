@@ -47,7 +47,8 @@
 
   - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
   - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) 
-  - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) (will update shortly)
+  - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) 
 
 - Week 2.2 HTTP Server
+  - [Code]() (will update shortly)
 
