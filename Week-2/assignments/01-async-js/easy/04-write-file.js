@@ -6,7 +6,8 @@
 // Write to a file
 // fs.writeFile(file, data[, options], callback)
 const fs = require("fs");
-fs.writeFile("/workspaces/100Xdevs/Week-2/assignments/easy/a.txt", "Hi Taha", function (err) {
+const path = "/workspaces/100Xdevs/Week-2/assignments/easy/a.txt";
+fs.writeFile(path, "Hi Taha", function (err) {
     console.log("Successfully written");
 });
 
