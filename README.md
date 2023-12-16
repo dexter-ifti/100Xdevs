@@ -40,7 +40,7 @@
     - [Terminal Clock](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/terminal-clock.js)
     - [Calculate Time](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/time.js) 
 
-## Week - 2
+## Week - 2 Practise & Node.js
 - Week 2.1  Revision of Async JS 
   - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/01-class-code) 
 - Assignments
@@ -49,7 +49,39 @@
   - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) 
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) 
 
-- Week 2.2 HTTP Server
+- Week 2.2 
   - [Code]() (will update shortly)
 - Assignments
+  - [Todo-Server]()
+  - [File-Server]()
 
+-Offline Classes
+
+- Week 2.3
+ - [Bash and Terminal]()
+
+- Week 2.4
+  - [Advance Bash]()
+
+- Week 2.5
+  - [Express From Basics]()
+
+- Week 2.6
+  - [Map, Filter and Arrow Functions]()
+- Week 2.7
+  - [Git and GitHub]()
+
+
+## Week 3 Databases & More Express
+
+-  Offline Shorts
+  - [Week 3.0.1]()
+  - [Week 3.0.2]()
+  - [Week 3.0.3]()
+  - [Week 3.0.4]()
+  - [Week 3.0.5]()
+  - [Week 3.0.6]()
+  - [Week 3.0.7]()
+  - [Week 3.0.8]()
+- Week 3.1
+  - [Middlewares , zod]()
