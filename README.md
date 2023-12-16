@@ -42,7 +42,7 @@
 
 ## Week - 2
 - Week 2.1  Revision of Async JS 
-  - [Code]()(will update shortly) 
+  - [Code](/workspaces/100Xdevs/Week-2/01-class-code) 
 - Assignments
 
   - [Easy](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/easy)
@@ -51,4 +51,5 @@
 
 - Week 2.2 HTTP Server
   - [Code]() (will update shortly)
+- Assignments
 
