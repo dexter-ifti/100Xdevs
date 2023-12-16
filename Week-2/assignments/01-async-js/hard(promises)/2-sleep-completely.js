@@ -4,16 +4,16 @@
  * the function should return a promise just like before
  */
 
-function wait(milliseconds) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve();
-        }, milliseconds);
-    })
-}
+function sleep(milliseconds) {
+    const start = Date.now();
+    while (Date.now() - start < milliseconds){
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                resolve();
+            }, milliseconds);
+        })
+    }
+  }
 
-async function sleep(milliseconds) {
-    return await wait(milliseconds);
-}
-
+  
 module.exports = sleep;
