@@ -49,8 +49,8 @@
   - [Medium](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/medium) 
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) 
 
-- Week 2.2 
-  - [Code]() (will update shortly)
+- Week 2.2 Express & Node.js
+  - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/02-http-server)
 - Assignments
   - [Todo-Server]()
   - [File-Server]()
