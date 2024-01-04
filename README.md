@@ -85,4 +85,9 @@
   - [Week 3.0.8]()
 - Week 3.1
   - [Middlewares , zod]()
-- Week 3.2 
+- Week 3.2
+  - [Databases and Authentication]()  
+- Week 3.3
+  - [Middlewares and Assignments]()
+- Week 3.4
+  - [JWT and Auth Recap and Assignment]() 
