@@ -90,4 +90,6 @@
 - Week 3.3
   - [Middlewares and Assignments]()
 - Week 3.4
-  - [JWT and Auth Recap and Assignment]() 
+  - [JWT and Auth Recap and Assignment]()
+- Week 3.5
+- [DOM Introduction (Laisha)]() 
