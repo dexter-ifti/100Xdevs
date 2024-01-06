@@ -86,9 +86,6 @@
 - Week 3.1
   - [Middlewares , zod]()
 - Week 3.2
-<<<<<<< HEAD
-  - []()
-=======
   - [Databases and Authentication]()  
 - Week 3.3
   - [Middlewares and Assignments]()
@@ -96,4 +93,3 @@
   - [JWT and Auth Recap and Assignment]()
 - Week 3.5
   - [DOM Introduction (Laisha)]() 
->>>>>>> 7a11be89684d3bf0b9b12f92b765d76fe37f1526
