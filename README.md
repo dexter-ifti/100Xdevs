@@ -53,6 +53,8 @@
 - Week 2.2 Express & Node.js
   - [Slides](https://drive.google.com/file/d/1JaNybPLZGsaCdKPoF9AHF0TW3hB1oPDt/view)
   - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/02-http-server)
+
+           PENDING FROM WEEK 2.2 ASSIGNMENTS   
 - Assignments
   - [Todo-Server]()
   - [File-Server]()
