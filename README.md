@@ -42,6 +42,7 @@
 
 ## Week - 2 Practise & Node.js
 - Week 2.1  Revision of Async JS 
+  - [Slides](https://drive.google.com/drive/folders/1WkAG_5E5syDnwsRG137DCntoY-p_pc75)
   - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/01-class-code) 
 - Assignments
 
@@ -50,6 +51,7 @@
   - [Hard](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/assignments/hard) 
 
 - Week 2.2 Express & Node.js
+  - [Slides](https://drive.google.com/file/d/1JaNybPLZGsaCdKPoF9AHF0TW3hB1oPDt/view)
   - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/02-http-server)
 - Assignments
   - [Todo-Server]()
