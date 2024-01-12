@@ -90,7 +90,7 @@
   - [Week 3.0.7]()
   - [Week 3.0.8]()
 - Week 3.1
-  - [Middlewares , zod]()
+  - [Middlewares , zod](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/01-middlwewares)
 - Week 3.2
   - [Databases and Authentication]()  
 - Week 3.3
