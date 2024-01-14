@@ -48,21 +48,24 @@ app.post("/signin", function (req, res) {
     });
   }
 
-  var token = jwt.sign({ username: username }, "shhhhh");
+  var token = jwt.sign({ username: username }, jwtPassword);
   return res.json({
     token,
   });
 });
 
 app.get("/users", function (req, res) {
+  // return a list of users other than this username 
   const token = req.headers.authorization;
   try {
     const decoded = jwt.verify(token, jwtPassword);
     const username = decoded.username;
     res.json({
-        users : ALL_USERS
+        users : ALL_USERS.filter((value) => {
+          if(value.username === username) return false;
+          else return true;
+        })
     })
-    // return a list of users other than this username
   } catch (err) {
     return res.status(403).json({
       msg: "Invalid token",
