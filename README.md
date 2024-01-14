@@ -90,10 +90,12 @@
   - [Week 3.0.8]()
 - Week 3.1
   - [Middlewares , zod](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/01-middlwewares)
-
-             PENDING FROM WEEK 3
+-Assignments
+  -[Request Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/01-requestcount.js)
+  -[Rate Limitter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/02-ratelimitter.js)
+  -[Error Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/03-errorcount.js)
 - Week 3.2
-  - [Databases and Authentication]()  
+  - [Databases and Authentication](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/02-databases-authentication)  
 - Week 3.3
   - [Middlewares and Assignments]()
 - Week 3.4
