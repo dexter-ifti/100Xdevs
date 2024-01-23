@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(29, 44, 44);
+}
+p{
+    background-color: rgb(244, 201, 12);
+    color: rgb(242, 9, 9);
+}
+a{
+    background-color: rgb(247, 108, 9);
+}
+pre{
+    background-color: rgb(9, 247, 9);
+}
+span{
+    background-color: rgb(138, 49, 111);
+}
