@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - HTML</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="username">Username :</label>
+        <div><input type="text" id="username" name="username" required></div>
+        <br>
+        <label for="password">Password :</label>
+        <div><input type="password" id="password" name="password" required></div>
+        <br>
+        <label >Gender :</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name = "gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br>
+        <br>
+        <textarea name="comment" id="comment" cols="30" rows="10">comment</textarea>
+        <br>
+        <br>
+        <br>
+        <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="baigan">Baigan</option>
+        </select>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+</html>
