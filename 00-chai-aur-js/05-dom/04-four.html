@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dexter - Ifti</title>
+</head>
+<body style="background-color: #414141; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    // Adding element to the DOM
+    function addLanguage(lang){
+        const li = document.createElement('li');
+        li.innerHTML = `${lang}`;
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addLanguage(Java);
+    addLanguage(C++);
+
+    // this function will work correctly but it is not a good practice to use innerHTML and said to be unoptimized
+
+    function addOptiLanguage(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+
+    addOptiLanguage('TypeScript');
+    addOptiLanguage('Python');
+
+    // this function is optimized and good to use
+
+    // Editing element to the DOM
+    const secondLang = document.querySelector('.language li:nth-child(2)');
+    console.log(secondLang);
+    // secondLang.innerHTML = 'Mojo'; // this will change the innerHTML of the second li element but it is not a good practice to use innerHTML and said to be unoptimized
+
+    const newli = document.createElement('li');
+    newli.textContent = 'Mojo';
+    secondLang.replaceWith(newli); // this will replace the second li element with the newli element which is created above and it is a good practice to use replaceWith() method
+
+    // Editing element to the DOM
+    const firstLang = document.querySelector('.language li:first-child');
+    firstLang.outerHTML = '<li>Mojo</li>'; // this will replace the first li element with the new li element which is created above
+    
+    // Removing element to the DOM
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove(); // this will remove the last li element from the DOM
+
+</script>
+</html>
