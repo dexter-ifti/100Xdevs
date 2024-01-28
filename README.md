@@ -63,23 +63,23 @@
   - [Todo-Server](https://github.com/dexter-ifti/100Xdevs/blob/20c3aa0bf687da7f54967a03d4c612ff3d32770f/Week-2/assignments/02-node-js/todoServer.js)
   - [File-Server](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/assignments/02-node-js/fileServer.js)
  
--Offline Classes
+- Offline Classes
 
-- Week 2.3
- - [Bash and Terminal](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/03-offline-class/01-bash-commands.md)
+  - Week 2.3
+    - [Bash and Terminal](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/03-offline-class/01-bash-commands.md)
 
-- Week 2.4
-  - [Advance Bash](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/03-offline-class/01-bash-commands.md)
+  - Week 2.4
+    - [Advance Bash](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/03-offline-class/01-bash-commands.md)
 
-- Week 2.5
-  - [Express From Basics](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/02-http-server)
+  - Week 2.5
+    - [Express From Basics](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/02-http-server)
 
-- Week 2.6
-  - [Map](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/05-map.js), 
-  - [Filter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/06-filetr.js) and      
-  - [Arrow Functions](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/04-arrow-fxn.js)
-- Week 2.7
-  - [Git and GitHub]()
+  - Week 2.6
+    - [Map](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/05-map.js), 
+    - [Filter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/06-filetr.js) and      
+    - [Arrow Functions](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-2/02-http-server/04-arrow-fxn.js)
+  - Week 2.7
+    - [Git and GitHub]()
 
 <hr></hr>
 
