@@ -4,6 +4,8 @@
 - Basics of HTML and CSS
   - Assignment/Class - [Zerodha Landing Page](https://github.com/dexter-ifti/100Xdevs/tree/main/Week_0/zerodha-app)
 
+<hr></hr>
+
 ## Week - 1 (Live + Offline)
 - Week 1.1 - Orientation
 - Week 1.2 JS Foundation - [Click Here for Code](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/main.js)
@@ -40,7 +42,10 @@
     - [Terminal Clock](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/terminal-clock.js)
     - [Calculate Time](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-1/class-assignments/time.js) 
 
+<hr></hr>
+
 ## Week - 2 Practise & Node.js
+
 - Week 2.1  Revision of Async JS 
   - [Slides](https://drive.google.com/drive/folders/1WkAG_5E5syDnwsRG137DCntoY-p_pc75)
   - [Code](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-2/01-class-code) 
@@ -76,8 +81,9 @@
 - Week 2.7
   - [Git and GitHub]()
 
+<hr></hr>
 
-## Week 3 Databases & More Express
+## Week - 3 Databases & More Express
 
 -  Offline Shorts
   - [Week 3.0.1]()
@@ -90,7 +96,7 @@
   - [Week 3.0.8]()
 - Week 3.1
   - [Middlewares , zod](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/01-middlwewares)
--Assignments
+- Assignments
   -[Request Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/01-requestcount.js)
   -[Rate Limitter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/02-ratelimitter.js)
   -[Error Counter](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/assignments/01-middlewares/03-errorcount.js)
@@ -99,8 +105,35 @@
 
 - Offline Classes 
   - Week 3.3
-    - [Middlewares and Assignments]()
+    - [Middlewares and Assignments](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/03-offline-classes/01-middleware.js)
   - Week 3.4
-    - [JWT and Auth Recap and Assignment]()
+    - [JWT and Auth Recap and Assignment](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-3/03-offline-classes/02-jwt-intro.js)
   - Week 3.5
     - [DOM Introduction (Laisha)]() 
+- Assignments 
+  - [02-JWT](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/assignments/02-jwt)
+  - [03-mongo](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/assignments/03-mongo)
+  - [04-mongo-with-jwt-auth](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/assignments/04-mongo-with-jwt-auth)
+
+<hr></hr>
+
+## Week - 4 Frontend Foundations 
+
+- Week 4.1
+
+  - [DOM](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-4/01-DOM)
+
+- Assignment
+
+  - [Frontend Todo]()
+- Week 4.2
+  - [React Foundation]()
+
+- Assignment
+  - [React Todo]()
+
+- Offline Lecture 
+  - [Mongo Deep Dive & Assignments]()
+
+<hr></hr>
+
