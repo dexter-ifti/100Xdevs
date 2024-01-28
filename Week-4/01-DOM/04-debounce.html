@@ -1,8 +1,9 @@
 <html>
     <script>
+        let timeout;
         function debouncePopulateDiv() {
             clearTimeout(timeout);
-            const timeout = setTimeout(() =>{
+            timeout = setTimeout(() =>{
                 populateDiv();
             }, 100)
         }
@@ -17,9 +18,9 @@
             
     </script>
     <body>
-        <input type="text" id="firstNumber" placeholder="First Number"></input></br>
+        <input oninput="debouncePopulateDiv()" type="text" id="firstNumber" placeholder="First Number"></input></br>
         <hr>
-        <input type="text" id="secondNumber" placeholder="Second Number"></input></br>
+        <input oninput="debouncePopulateDiv()" type="text" id="secondNumber" placeholder="Second Number"></input></br>
         <hr>
         <div id="finalSum"></div>
     </body>
