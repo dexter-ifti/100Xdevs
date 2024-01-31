@@ -26,5 +26,18 @@ const title = document.getElementById('title');
 title.style.backgroundColor = 'yellow';
 title.style.padding = '15px';
 title.style.bordarRadius = '5px';
+```
+### for getting the content of any element
+```js
+there are thre methods - textContent, innerHTML, innerText
+const title = document.getElementById('title');
+title.textContent
+'DOM learning on Chai or Code test text'
+title.innerText
+'DOM learning on Chai or Code'
+title.innerHTML
+'DOM learning on Chai or Code <span style="display: none;">test text</span>'
+```
+```js
 
 ```
