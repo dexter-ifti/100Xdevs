@@ -39,8 +39,48 @@ title.innerHTML
 'DOM learning on Chai or Code <span style="display: none;">test text</span>'
 ```
 ```js
-
+document.querySelector('h2');
+// it will give first h2 tag
+document.querySelector('#title');
+// selecting by id
+document.querySelector('.heading');
+// selecting by className
+document.querySelector('input[type="password"]');
 ```
 ```js
+const myul = document.querySelector('ul');
+const turnGreen = myul.querySelector('li');
+turnGreen.style.backgroundColor = "green";
+turnGreen.style.padding = "10px"
+turnGreen.innerText;
+turnGreen.innerText = "kuch bhi";
+```
+```js
+const tempLiList = document.querySelectorAll('li');
+tempLiList.style.color = "green";
+// this will throw error we have to specify
+tempLiList[0].style.color = "green";
+tempLiList.forEach((l) => {
+    l.style.background.color = "darkorange";
+});
+```
+
+```js
+const tempClassList = document.getElementByClassName('list-item');
+
+tempClassList.forEach(); // not available for this
+```
+
+## Converting HTMLCollection / NodeList to Array
+```js
+
+const tempClassList = document.getElementByClassName('list-item');
+
+const convertedArray = Array.from(tempClassList);
+
+convertedArray.forEach( (li) => {
+    li.style.color = 'orange';
+});
+
 
 ```
