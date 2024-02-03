@@ -83,7 +83,3 @@ convertedArray.forEach( (li) => {
 });
 ```
 ```js
-
-
-
-```
