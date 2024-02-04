@@ -7,7 +7,7 @@ console.dir(document); // it will give all attribute same as window.document
 ```
 ```js
 console.log(document.links) 
-// probably it will give HTML collection which is similar to array but now array , and forEach loop, map, filter cannot be applied here
+// it will give HTML collection which is similar to array but now array , and forEach loop, map, filter cannot be applied here
 // but some of the array propperties can be applied here like 
 console.log(document.links[2])
 // ouptput will 2nd item of HTML collection 
@@ -82,4 +82,4 @@ convertedArray.forEach( (li) => {
     li.style.color = 'orange';
 });
 ```
-```js
+
