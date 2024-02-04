@@ -56,7 +56,7 @@ turnGreen.innerText;
 turnGreen.innerText = "kuch bhi";
 ```
 ```js
-const tempLiList = document.querySelectorAll('li');
+const tempLiList = document.querySelectorAll('li'); // NodeList return  karega
 tempLiList.style.color = "green";
 // this will throw error we have to specify
 tempLiList[0].style.color = "green";
@@ -66,7 +66,7 @@ tempLiList.forEach((l) => {
 ```
 
 ```js
-const tempClassList = document.getElementByClassName('list-item');
+const tempClassList = document.getElementByClassName('list-item'); //HTML return karega
 
 tempClassList.forEach(); // not available for this
 ```
