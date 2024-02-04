@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    /*
+    // Adding event to the DOM
+    // this is the 2nd way of adding event to the DOM
+    // this is the old way of adding event to the DOM first way is to add event in the html tag
+    */
+    // document.getElementById('owl').onclick = () => {
+    //     alert('You clicked on the owl image');
+    // }
+    /*
+    this is the new way of adding event to the DOM
+    this is the 3rd way of adding event to the DOM
+    */
+    // document.getElementById('owl').addEventListener('click', () => {
+    //     alert('You clicked on the owl image using addEventListener');
+    // });
+    /*
+    // this is the 4th way of adding event to the DOM
+    attachEvent() is a method that is used to attach an event handler to the specified element.
+    jQuery uses attachEvent() method to attach an event handler to the specified element.
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+    */
+
+    document.getElementById('images').addEventListener('click', (e) => {
+        console.log('You clicked inside the ul');
+    });
+    document.getElementById('photoshop').addEventListener('click', (e) => {
+        e.stopPropagation(); // this will stop the event from bubbling up
+        console.log('You clicked on the photoshop image');
+    });
+
+    document.getElementById('google').addEventListener('click', (e) => {
+        e.preventDefault(); // this will stop the default behavior of the anchor tag
+        e.stopPropagation(); // this will stop the event from bubbling up
+        console.log('You clicked on the google link');
+    }, false);
+    document.querySelector('#images').addEventListener('click', (e)=> {
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = confirm('Do you want to remove this image?');
+            let removeit = e.target.parentNode;
+            if(removeIt) {
+                removeit.remove();
+            }
+        }
+    })
+</script>
+</html>
