@@ -12,16 +12,17 @@
 </body>
 <script>
     // Adding element to the DOM
+    // this function will work correctly but it is not a good practice to use innerHTML and said to be unoptimized
     function addLanguage(lang){
         const li = document.createElement('li');
         li.innerHTML = `${lang}`;
         document.querySelector('.language').appendChild(li);
     }
 
-    addLanguage(Java);
-    addLanguage(C++);
+    addLanguage("Java");
+    addLanguage("C++");
 
-    // this function will work correctly but it is not a good practice to use innerHTML and said to be unoptimized
+    // this function is optimized and good to use
 
     function addOptiLanguage(langName) {
         const li = document.createElement('li');
@@ -32,7 +33,6 @@
     addOptiLanguage('TypeScript');
     addOptiLanguage('Python');
 
-    // this function is optimized and good to use
 
     // Editing element to the DOM
     const secondLang = document.querySelector('.language li:nth-child(2)');
@@ -45,7 +45,7 @@
 
     // Editing element to the DOM
     const firstLang = document.querySelector('.language li:first-child');
-    firstLang.outerHTML = '<li>Mojo</li>'; // this will replace the first li element with the new li element which is created above
+    firstLang.outerHTML = '<li>C#</li>'; // this will replace the first li element with the new li element which is created above
     
     // Removing element to the DOM
     const lastLang = document.querySelector('li:last-child');
