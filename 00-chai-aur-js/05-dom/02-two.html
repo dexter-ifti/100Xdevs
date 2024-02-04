@@ -13,7 +13,6 @@
 </head>
 <body>
     <div class="parent">
-        <!-- this is comment -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
         <div class="day">Wednesday</div>
@@ -21,26 +20,80 @@
     </div>
 </body>
 <script>
-    const parent = document.querySelector('/parent');
+    const parent = document.querySelector('.parent');
     console.log(parent);
+    // this will give the parent element (whole div with class parent)
     console.log(parent.children);
+    /**
+     * HTMLCollection(4) [div.day, div.day, div.day, div.day]
+     * 0: div.day
+     * 1: div.day
+     * 2: div.day
+     * 3: div.day
+     * length: 4
+     * */
     console.log(parent.children[1]);
+    /**
+     * <div class="day">Tuesday</div>
+     * */
     console.log(parent.children[1].innerHTML);
+    /**
+     * Tuesday
+     * */
 
     for (let i = 0; i < parent.children.length; i++) {
-        console.log();(parent.children[i].innerHTML);
+        console.log(parent.children[i].innerHTML);
         
     }
+    /**
+     * Monday
+     * Tuesday
+     * Wednesday
+     * Thursday
+     * */
     parent.children[1].style.color = 'red';
     console.log(parent.firstElementChild);
+    /**
+     * <div class="day">Monday</div>
+     * */
     console.log(parent.lastElementChild);
+    /**
+     * <div class="day">Thursday</div>
+     * */
 
     const dayOne = document.querySelector('.day');
+
     console.log(dayOne);
+    /**
+     * <div class="day">Monday</div>
+     * */
     console.log(dayOne.parentElement);
+    /**
+     * <div class="parent">...</div>
+     * */
+     
     console.log(dayOne.nextElementSibling);
+    /**
+     * <div class="day" style = "color: red">Tuesday</div>
+     * */
     console.log(dayOne.previousElementSibling);
+    /**
+     * null
+     * */
 
     console.log("Nodes : ", parent.childNodes);
+    /**
+     * NodeList(9) [text, div.day, text, div.day, text, div.day, text, div.day, text]
+     * 0: text
+     * 1: div.day
+     * 2: text
+     * 3: div.day
+     * 4: text
+     * 5: div.day
+     * 6: text
+     * 7: div.day
+     * 8: text
+     * length: 9
+     * */
 </script>
 </html>
