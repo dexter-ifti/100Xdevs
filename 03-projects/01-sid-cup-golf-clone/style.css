@@ -38,6 +38,7 @@ video{
     width: 100%;
     object-fit: cover;
     position: fixed;
+    z-index: -1;
 }
 
 
@@ -64,9 +65,13 @@ video{
 }
 
 #page1 h1::before {
-    content: "EAT. DRINK. PLAY.";
+    content: "EAT.DRINK.PLAY.";
     position: absolute;
     color: #fff;
+    top: -5px;
+    bottom: -5px;
+    -webkit-text-stroke: 1.5px #95c11e;
+    z-index: -1;
 }
 
 #page1 h2{
