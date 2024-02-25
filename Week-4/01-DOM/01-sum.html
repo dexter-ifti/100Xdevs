@@ -1,16 +1,40 @@
 <html>
-    <script>
-        function populateDiv( ) {
-            const element = document.getElementById('finalSum');
-            element.innerHTML = parseInt(document.getElementById('firstNumber').value) + parseInt(document.getElementById('secondNumber').value);
-        }
-    </script>
+    <head>
+        <title>Sum of Two Numbers</title>
+        <style>
+            body {
+                background-color: #212121;
+                color: red;
+            }
+        </style>
+    </head>
     <body>
         <input type="text" id="firstNumber" placeholder="First Number"></input></br>
         <hr>
         <input type="text" id="secondNumber" placeholder="Second Number"></input></br>
         <hr>
-        <button onclick="populateDiv()">Calculate Sum</button>
+        <!-- <button onclick="populateDiv()">Calculate Sum</button> -->
+        <button id="calc">Calculate Sum</button>
         <div id="finalSum"></div>
     </body>
+    <script>
+        document.getElementById('calc').addEventListener('click', () => {
+            populateDiv();
+        });
+        function populateDiv( ) {
+            const element = document.getElementById('finalSum');
+            // this will replace the content of the div with the sum of the two numbers but 
+            //  this method is not recommended as it is said to be slow and not efficient
+
+            // element.innerHTML = parseInt(document.getElementById('firstNumber').value) + parseInt(document.getElementById('secondNumber').value);
+            
+            // this method is recommended as it is faster and more efficient 
+            element
+            .appendChild(document
+            .createTextNode(parseInt(document
+            .getElementById('firstNumber').value) 
+            + parseInt(document.
+            getElementById('secondNumber').value)));
+        }
+    </script>
 </html>
