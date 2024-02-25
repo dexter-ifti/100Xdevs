@@ -23,18 +23,20 @@
         });
         function populateDiv( ) {
             const element = document.getElementById('finalSum');
+
+            const sum = parseInt(document.getElementById('firstNumber').value) + parseInt(document.getElementById('secondNumber').value);
+
+            element.innerHTML = ''; // clears the previous results from the div
+            
             // this will replace the content of the div with the sum of the two numbers but 
             //  this method is not recommended as it is said to be slow and not efficient
 
-            // element.innerHTML = parseInt(document.getElementById('firstNumber').value) + parseInt(document.getElementById('secondNumber').value);
+            // element.innerHTML = `<h1>The Sum of the Numbers is :  ${sum}</h1>`;
             
             // this method is recommended as it is faster and more efficient 
-            element
-            .appendChild(document
-            .createTextNode(parseInt(document
-            .getElementById('firstNumber').value) 
-            + parseInt(document.
-            getElementById('secondNumber').value)));
+            // element
+            // .appendChild(document
+            // .createTextNode(`The sum of the two numbers is: ${sum}`));
         }
     </script>
 </html>
