@@ -7,10 +7,16 @@
             const response = await fetch('https://sum-server.100xdevs.com/interest?principal=' + a + '&rate=' + b + '&time=' + c);
             const ans = await response.text();
             const result = JSON.parse(ans);
-            document.getElementById('finalInterest').innerHTML = JSON.stringify({
-            total: result.total,
-            interest: result.interest
-            });
+            document.getElementById('finalInterest')
+            .appendChild(
+                document
+                .createTextNode(
+                    JSON.stringify({
+                        total: result.total,
+                        interest: result.interest
+                    })
+                )
+            );
         }
     </script>
     <body>
@@ -18,6 +24,7 @@
         <input type="text" id="rate", placeholder="Rate"></input></br>
         <input type="text" id="time", placeholder="Time"></input></br>
         <button onclick="calculateInterest()">Calculate Interest</button>
+        <br></br>
         <div id="finalInterest"></div>
     </body>
 </html>
