@@ -6,12 +6,12 @@ const { User, Course } = require("../db");
 // User Routes
 router.post('/signup', (req, res) => {
     // Implement user signup logic
-    const {username, password} = req.body;
-    const user = new User({
-        username : username,
-        password : password,
+    const username = req.body.username 
+    const password = req.body.password;
+    User.create({
+        username,
+        password,
     });
-    user.save();
     res.json({
         "msg" : "User Created Successfully",
     });
@@ -19,7 +19,7 @@ router.post('/signup', (req, res) => {
 
 router.get('/courses', async (req, res) => {
     // Implement listing all courses logic
-    const responce = await Course({});
+    const responce = await Course.find({});
     res.json({
         courses : responce,
     });
@@ -34,7 +34,7 @@ router.post('/courses/:courseId', userMiddleware, async (req, res) => {
         username: username
     }, {
         "$push": {
-            purchasedCourse: courseId
+            purchasedCourses: courseId
         }
     })
     res.json({
@@ -48,7 +48,7 @@ router.get('/purchasedCourses', userMiddleware, async (req, res) => {
         username : req.headers.username
     });
 
-    console.log(user.purchasedCourse);
+    console.log(user.purchasedCourses);
     const courses = await Course.find({
         _id : {
             "$in": user.purchasedCourses
