@@ -1,19 +1,19 @@
 const { Router } = require("express");
 const adminMiddleware = require("../middleware/admin");
-const { Admin, User, Course } = require("../db");
+const { Admin, Course} = require("../db");
 const {JWT_SECRET} = require("../config");
 const router = Router();
 const jwt = require('jsonwebtoken');
 
 // Admin Routes
-router.post('/signup', (req, res) => {
+router.post('/signup', async(req, res) => {
     // Implement admin signup logic
-    const {username, password} = req.body;
-    const user = new Admin({
+    const username = req.body.username;
+    const password = req.body.password;
+    await Admin.create({
         username : username,
         password : password
     });
-    user.save();
     res.json({
         "msg" : "Admin Created Successfully",
     })
@@ -43,16 +43,19 @@ router.post('/signin', async(req, res) => {
     }
 })
 
-router.post('/courses', adminMiddleware, (req, res) => {
+router.post('/courses', adminMiddleware, async (req, res) => {
     // Implement course creation logic
-    const {title, description, price, imageLink} = req.body;
-    const course = new Course({
-        title : title,
-        description : description,
-        price : price,
-        imageLink : imageLink,
+    const title = req.body.title;
+    const description = req.body.description;
+    const imageLink = req.body.imageLink;
+    const price = req.body.price;
+
+    const course = await Course.create({
+        title,
+        description,
+        price,
+        imageLink,
     })
-    course.save();
     res.json({
         "msg" : "Course Created Successfully",
         CourseId : course._id,
