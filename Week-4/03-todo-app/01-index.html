@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: #0248ea;">
+    <h1><i>Simple Todo Application</i></h1>
+    <div>
+        <input id = "title" type="text" placeholder="title"> </input>
+        <br></br>
+        <input id = "description" type="text" placeholder="description"> </input>
+        <br></br>
+        <button onclick="addTodo()">Add Todo</button>
+    </div>
+</body>
+<script>
+    let globalId = 0;
+    function addTodo() {
+        const title = document.getElementById('title').value;
+        const description = document.getElementById('description').value;
+        // creating a div for the todo
+        const parent = document.createElement('div');
+        parent.setAttribute('id', 'todos');
+        parent.appendChild(createChild(title, description, globalId++));
+    }
+    function createChild(title, description, id) {
+        const todo = document.createElement('div');
+        // creating a div for title and adding text to it
+        const title_child = document.createElement('div');
+        title_child.append(document.createTextNode(title));
+        // creating a div for description and adding text to it
+        const description_child = document.createElement('div');
+        description_child.append(document.createTextNode(description));
+        // creating a button and adding text to it
+        const button_child = document.createElement('button');
+        button_child.append(document.createTextNode('Mark as Done'));
+        button_child.setAttribute('onclick', `markAsDone(${id})`);
+        // appending the title, description and button to the the outer div
+        todo.appendChild(title_child);
+        todo.appendChild(description_child);
+        todo.appendChild(button_child);
+        todo.setAttribute('id', id);
+        return todo;
+    }
+    function markAsDone(id){
+        const todo = document.getElementById(id);
+        todo.children[2].innerHTML = '';
+        todo.children[2].append(document.createTextNode('Done!'));
+    }
+</script>
+</html>
