@@ -125,15 +125,32 @@
 
 - Assignment
 
-  - [Frontend Todo]()
+  - [Frontend Todo](https://github.com/dexter-ifti/100Xdevs/blob/main/Week-4/assignments/index.html)
 - Week 4.2
-  - [React Foundation]()
+  - [TODO by DOM](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-4/03-todo-app)
+  - [React Foundation](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-4/02-react/first)
 
 - Assignment
-  - [React Todo]()
+  - [React Todo](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-4/assignments/react-basics)
 
 - Offline Lecture 
-  - [Mongo Deep Dive & Assignments]()
+  - [Mongo Deep Dive & Assignments](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-3/assignments/03-mongo)
+
+<hr></hr>
+
+## Week - 5 <u>REACT</u>
+
+- Week 5.1 [React Foundation]()
+
+  - [Counter by DOM](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-5/01-React-foundation)
+  - [Counter by React](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-5/02-counter-app/counter-app)
+
+- Week 5.2
+  - [React Project - (Todo App)]()
+
+- Assignment
+  - [Level - 1]()
+
 
 <hr></hr>
 
