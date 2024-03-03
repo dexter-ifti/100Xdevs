@@ -29,6 +29,7 @@
       parent.appendChild(firstChild);
       parent.appendChild(secondChild);
       parent.appendChild(thirdChild);
+      parent.setAttribute("id", todo.id);
       grandParent.appendChild(parent);
     }
   
@@ -101,7 +102,7 @@
   </script>
 </head>
 
-<body>
+<body style="background-color: #212121; color: blue;">
   <input type="text" id="title" placeholder="Todo title"></input> <br /><br />
   <input type="text" id="description" placeholder="Todo description"></input> <br /><br />
   <button onclick="addTodo()">Add todo</button>
