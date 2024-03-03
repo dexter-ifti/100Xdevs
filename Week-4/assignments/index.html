@@ -2,6 +2,79 @@
 <html>
 
 <head>
+  <style>
+    body {
+      background: linear-gradient(135deg, #372ccf, #147338);
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #fff;
+    }
+
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #todo-form-container {
+      margin-bottom: 20px; /* Add margin to separate from todo list */
+    }
+
+    #todo-form {
+
+      text-align: center;
+      background-color: rgba(106, 10, 42, 0.882);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #todos {
+      /* margin-top: 20px; */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .todo {
+      background-color: rgba(255, 255, 255, 0.2);
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .todo h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .todo h4 {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .todo button {
+      margin-top: 15px;
+      background-color: #4CAF50;
+      color: rgb(218, 20, 20);
+      border:#4e4376 ;
+      border-radius: 15px;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .todo button:hover {
+      background-color: #e0dcdb;
+    }
+  </style>
   <script>
     let globalId = 1;
     let todoState = [];
@@ -18,11 +91,12 @@
     function addTodoToDom(todo) {
       const grandParent = document.getElementById("todos");
       const parent = document.createElement("div");
+      parent.classList.add("todo"); // Add todo class
       parent.setAttribute("id", todo.id);
-      const firstChild = document.createElement('h1');
-      firstChild.append(document.createTextNode(todo.title));
-      const secondChild = document.createElement("div");
-      secondChild.append(document.createTextNode(todo.description));
+      const firstChild = document.createElement('h3');
+      firstChild.append(document.createTextNode(`title: ${todo.title}`));
+      const secondChild = document.createElement("h4");
+      secondChild.append(document.createTextNode(`description: ${todo.description}`));
       const thirdChild = document.createElement('button');
       thirdChild.append(document.createTextNode("Mark as Done"));
       thirdChild.setAttribute('onclick',`markAsDone(${todo.id})`);
@@ -49,8 +123,8 @@
   
     function updateTodoInDom(oldTodo, newTodo) {
         const element = document.getElementById(oldTodo.id);
-        element.children[0].innerHTML = newTodo.title;
-        element.children[1].innerHTML = newTodo.description;
+        element.children[0].innerHTML = `title: ${newTodo.title}`;
+        element.children[1].innerHTML = `description: ${newTodo.description}`;
         // element.children[2].innerHTML = newTodo.done ?"Mark as Done" : "Done !";
     }
   
@@ -102,13 +176,20 @@
   </script>
 </head>
 
-<body style="background-color: #212121; color: blue;">
-  <input type="text" id="title" placeholder="Todo title"></input> <br /><br />
-  <input type="text" id="description" placeholder="Todo description"></input> <br /><br />
-  <button onclick="addTodo()">Add todo</button>
-  <br /> <br />
+<body>
+  <div id="container">
+    <div id="todo-form-container">
 
-  <div id="todos"></div>
+      <div id="todo-form">
+        <input type="text" id="title" placeholder="Todo title"></input> <br /><br />
+        <input type="text" id="description" placeholder="Todo description"></input> <br /><br />
+        <button onclick="addTodo()">Add todo</button>
+        <br /> <br />
+      </div>
+    </div>
+    
+    <div id="todos"></div>
+  </div>
   
 </body>
 
