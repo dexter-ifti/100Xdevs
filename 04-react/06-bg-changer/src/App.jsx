@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -29,7 +27,7 @@ function App() {
           >BLUE</button>
           <button 
           onClick={() => setColor('yellow')}
-          className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+          className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
           style={{backgroundColor : "yellow"}}
           >YELLOW</button>
           <button 
@@ -44,7 +42,7 @@ function App() {
           >GRAY</button>
           <button 
           onClick={() => setColor('pink')}
-          className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+          className='outline-none px-4 py-1 rounded-full text-black shadow-lg'
           style={{backgroundColor : "pink"}}
           >PINK</button>
           <button 
@@ -62,6 +60,11 @@ function App() {
           className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
           style={{backgroundColor : "purple"}}
           >PURPLE</button>
+          <button 
+          onClick={() => setColor('olive')}
+          className='outline-none px-4 py-1 rounded-full text-white shadow-lg'
+          style={{backgroundColor : "olive"}}
+          >OLIVE</button>
         </div>
       </div>
       
