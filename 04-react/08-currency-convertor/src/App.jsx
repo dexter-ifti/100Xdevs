@@ -2,15 +2,17 @@ import { useState } from 'react'
 import { InputBox } from './components'
 import useCurrencyInfo from './hooks/useCurrencyInfo'
 
+
 function App() {
   const [amount, setAmount] = useState(0)
   const [from, setFrom] = useState('USD')
   const [to, setTo] = useState('INR')
   const [convertedAmount, setConvertedAmount] = useState(0)
 
-  const { data: currencyInfo, isLoading, error } = useCurrencyInfo(from);
+  const currencyInfo = useCurrencyInfo(from);
 
-  const options = Object.keys(currencyInfo)
+  const fromOptions = Object.keys(currencyInfo)
+  const toOptions = fromOptions.filter(currency => currency !== from);
 
   const swap = () => {
     setFrom(to)
@@ -21,27 +23,29 @@ function App() {
 
   const convert = () => setConvertedAmount(amount * currencyInfo[to])
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    convert();
-  }
-
   return (
     <div
       className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
       style={{
-        backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        // backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
+        // backgroundImage: `url('https://img.freepik.com/free-vector/gradient-stock-market-concept-with-statistics_23-2149157696.jpg?size=626&ext=jpg')`,
+        backgroundImage: `url('https://img.freepik.com/free-vector/gradient-cryptocurrency-concept_23-2149215736.jpg?w=1060&t=st=1711421578~exp=1711422178~hmac=45795bc10d6ffd5fe4d664ab6a4c32c62b3faef08345b18b2fdf6985cb52996d')`,
       }}
     >
       <div className="w-full">
         <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
-          <form onSubmit={handleSubmit}>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              convert()
+            }}
+          >
             <div className="w-full mb-1">
               <InputBox
                 label="From"
                 amount={amount}
-                currencyOptions={options}
-                onCurrencyChange={(currency) => setAmount(currency)}
+                currencyOptions={fromOptions}
+                onCurrencyChange={(currency) => setFrom(currency)}
                 selectCurrency={from}
                 onAmountChange={(amount) => setAmount(amount)}
               />
@@ -59,14 +63,14 @@ function App() {
               <InputBox
                 label="To"
                 amount={convertedAmount}
-                currencyOptions={options}
+                currencyOptions={toOptions }
                 onCurrencyChange={(currency) => setTo(currency)}
                 selectCurrency={to}
                 amountDisable
               />
             </div>
             <button type="submit" className="w-full bg-blue-600 text-white px-4 py-3 rounded-lg">
-              {isLoading ? "Loading..." : error ? "Error Fetching Data" : `Convert ${from.toUpperCase()} to ${to.toUpperCase()}`}
+              Convert {from.toUpperCase()} to {to.toUpperCase()}
             </button>
           </form>
         </div>
