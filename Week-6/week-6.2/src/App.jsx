@@ -1,29 +1,20 @@
-import { useEffect, useState } from 'react'
-import axios from 'axios'
+import {App1, App2, App3, App4, App5} from './components'
 
 function App() {
-  const [todos, setTodos] = useState([]);
-
-  useEffect( () => {
-    axios.get('https://sum-server.100xdevs.com/todos')
-    .then( (respoonse) => {
-      setTodos(respoonse.data.todos); 
-    })
-  }, [])
+  
 
   return (
     <>
-      {todos.map( todo => <Todo todoid = {todo.id} title = { todo.title} description={todo.description}/>)}
-
+    {/* <App1></App1>
+    <App2></App2>
+    <App3></App3> 
+    <App4></App4>
+    */}
+    <App5></App5>
     </>
   )
 }
 
-function Todo({title, description}){
-  return <div>
-    <h1>{title}</h1>
-    <p>{description}</p>
-  </div>
-}
+
 
 export default App
