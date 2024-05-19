@@ -2,18 +2,19 @@ import React, { useEffect, useState } from 'react'
 import { useLoaderData } from 'react-router-dom'
 
 function Github() {
-  const followers = useLoaderData();
-  // const [followers, setFollowers] = useState(0);
+  const data = useLoaderData();
+  // const [data, setData] = useState(0);
   // useEffect( () => {
   //   fetch('https://api.github.com/users/dexter-ifti ')
   //   .then(response => response.json())
-  //   .then(data => setFollowers(data))
+  //   .then(data => setData(data))
   // }, [])
   return (
     <div>
       <div className="mx-auto w-full max-w-7xl">
-        <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Github Followers: {followers.followers}</h1>
-        <img src={followers.avatar_url} alt="" width={300} />
+        <div className='text-center m-4 bg-gray-600 text-white p-4 text-3xl'>Github Followers: {data.followers}
+        <img src={data.avatar_url} alt="Git Picture" width={300} />
+        </div>
       </div>
     </div>
   )
