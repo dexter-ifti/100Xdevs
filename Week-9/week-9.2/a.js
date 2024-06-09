@@ -33,3 +33,8 @@ class Employee {
 }
 const emp = new Employee('John', 'Doe', 30, 'abc@gmail.com');
 console.log(emp);
+function printId(id) {
+    console.log(id);
+}
+printId('abc');
+printId(123);
