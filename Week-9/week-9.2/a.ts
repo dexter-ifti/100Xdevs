@@ -58,3 +58,12 @@ class Employee implements User {
 
 const emp = new Employee('John', 'Doe', 30, 'abc@gmail.com')
 console.log(emp);
+
+type stringOrNumber = string | number;
+
+function printId(id : stringOrNumber) : void {
+    console.log(id);
+}
+
+printId('abc');
+printId(123);
