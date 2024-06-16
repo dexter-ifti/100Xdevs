@@ -1,7 +1,7 @@
 {
   "name": "2-prisma-simple",
   "version": "1.0.0",
-  "description": "",
+  "description": "Same as the last assignment, but you need to use `prisma` as the ORM.",
   "main": "index.js",
   "scripts": {
     "build": "tsc -b",
@@ -15,12 +15,14 @@
     "@prisma/client": "5.9.1",
     "@types/jest": "^29.5.12",
     "@types/pg": "^8.11.0",
-    "pg": "^8.11.3",
-    "typescript": "^5.3.3"
+    "pg": "^8.11.3"
   },
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "jest": "^29.7.0",
-    "prisma": "5.9.1",
-    "ts-jest": "^29.1.2"
+    "prisma": "^5.9.1",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
