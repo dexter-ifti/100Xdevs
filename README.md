@@ -154,3 +154,28 @@
 
 <hr></hr>
 
+
+## Week - 9 <u>Custom Hooks And Typescript</u>
+  - Week - 9.1 [Custom Hooks](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-09/week-9.1)
+  - Week - 9.2 [Typescript](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-09/week-9.2)
+  - [Assignment]()
+
+<hr></hr>
+
+
+## Week - 10 <u>Postgres And Prisma</u>
+  - Week - 10.1 [Postgres](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-10)
+  - Week - 10.2 [Prisma](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-10/week-10.2)
+  - [Assignment](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-10/Assignments)
+    - [Postgres](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-10/Assignments/1-postgres-simple)
+    - [Prisma](https://github.com/dexter-ifti/100Xdevs/tree/main/Week-10/Assignments/2-prisma-simple)
+
+
+<hr></hr>
+
+## Week 11 <u>Serverless Backend</u>
+
+  - Week 11.1
+  - Week 11.2
+  - [Assignment]()
+  
