@@ -1,3 +1,4 @@
+<!-- GitAds-Verify: 6J1PGVQMC28GJSJBHVX375BZCGGXPTB3 -->
 # 100Xdevs Cohort 2.0
 
 ## Week - 0 (Offline)
