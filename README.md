@@ -1,5 +1,8 @@
-<!-- GitAds-Verify: 6J1PGVQMC28GJSJBHVX375BZCGGXPTB3 -->
 # 100Xdevs Cohort 2.0
+
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=dexter-ifti/100xdevs@github)](https://gitads.dev/v1/ad-track?source=dexter-ifti/100xdevs@github)
+
 
 ## Week - 0 (Offline)
 - Basics of HTML and CSS
