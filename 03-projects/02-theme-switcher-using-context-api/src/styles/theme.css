@@ -1,0 +1,23 @@
+:root {
+    --bg-color: white;
+    --text-color: black;
+    --card-bg: #f4f4f4;
+}
+
+[data-theme="dark"] {
+    --bg-color : #121212;
+    --tesxt-color : white;
+    --card-bg : #1e1e1e;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 20px;
+    border-radius: 10px;
+}

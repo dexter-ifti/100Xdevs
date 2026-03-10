@@ -1,0 +1,28 @@
+.light {
+    background: white;
+    color: black;
+    height: 100vh;
+}
+
+.dark {
+    background: black;
+    color: white;
+    height: 100vh;
+}   
+
+.card{
+    border: 2px solid red;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    height: auto;
+}
+
+.card.light {
+    background: #23647d;
+    color: rgb(47, 18, 179);
+}
+.card.dark {
+    background: #f9ee9b;
+    color: rgb(134, 226, 148);
+}
